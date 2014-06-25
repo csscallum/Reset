@@ -1,0 +1,52 @@
+/* Don't declare font-size here, 16px is the browser default unless the user has
+   increased this for accessiblity purposes. Use EM's or REM's ============== */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    margin: 0;
+}
+
+/* { box-sizing: border-box } FTW - http://goo.gl/ggTvz ===================== */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+ol,
+ul {
+    margin: 0 0 16px; /* Single-direction margin declarations - http://goo.gl/QWu22 */
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .3s;
+}
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+}
